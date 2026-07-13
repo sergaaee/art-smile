@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import InfoPage from "../../_components/InfoPage";
 import { serviceDetails } from "../../_data/serviceDetails";
@@ -36,6 +37,17 @@ export default async function ServiceDetailPage({
 
   return (
     <InfoPage title={service.title} lead={service.summary}>
+      <div className="relative -mt-4 mb-6 aspect-[2/1] overflow-hidden rounded-2xl">
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          sizes="(min-width: 768px) 768px, 100vw"
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {service.about.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}

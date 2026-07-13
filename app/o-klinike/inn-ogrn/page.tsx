@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import InfoPage from "../../_components/InfoPage";
 import { legalInfo } from "../../_data/legal";
 
@@ -26,6 +27,29 @@ export default function InnOgrnPage() {
         Федеральной налоговой службы (nalog.gov.ru) по указанным ИНН или
         ОГРН.
       </p>
+
+      <h2>Свидетельства ФНС</h2>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <a href="/documents/ogrn.jpeg" target="_blank" rel="noopener noreferrer" className="block">
+          <Image
+            src="/documents/ogrn.jpeg"
+            alt="Свидетельство о государственной регистрации юридического лица (ОГРН)"
+            width={783}
+            height={1122}
+            className="w-full rounded-lg ring-1 ring-slate-200 transition-opacity hover:opacity-90"
+          />
+        </a>
+        <a href="/documents/inn.jpeg" target="_blank" rel="noopener noreferrer" className="block">
+          <Image
+            src="/documents/inn.jpeg"
+            alt="Свидетельство о постановке на учёт российской организации в налоговом органе (ИНН/КПП)"
+            width={794}
+            height={1122}
+            className="w-full rounded-lg ring-1 ring-slate-200 transition-opacity hover:opacity-90"
+          />
+        </a>
+      </div>
+      <p className="text-xs text-slate-500">Нажмите на изображение, чтобы открыть в полном размере.</p>
     </InfoPage>
   );
 }

@@ -75,6 +75,7 @@ const sections = [
       { href: "/dokumentaciya/vnutrennie-dokumenty", label: "Внутренние документы" },
       { href: "/dokumentaciya/vyshestoyashie-organizacii", label: "Вышестоящие организации" },
       { href: "/dokumentaciya/territorialnaya-programma", label: "Территориальная программа" },
+      { href: "/dokumentaciya/usloviya-okazaniya-uslug", label: "Условия оказания услуг" },
     ],
   },
   {
@@ -91,6 +92,51 @@ const sections = [
         external: true,
       },
       {
+        href: "/documents/prava-i-obuazannosti-v-sfere-zdorovya.pdf",
+        label: "Права и обязанности граждан в сфере охраны здоровья (PDF)",
+        external: true,
+      },
+      {
+        href: "/documents/pravila-povedenia-pacientov.pdf",
+        label: "Правила поведения пациентов (PDF)",
+        external: true,
+      },
+      {
+        href: "/documents/programma-gosgarantij-2023-2025.pdf",
+        label: "Программа государственных гарантий 2023–2025 (PDF)",
+        external: true,
+      },
+      {
+        href: "/documents/territorialnaya-programma-2023-2025.pdf",
+        label: "Территориальная программа 2023–2025 (PDF)",
+        external: true,
+      },
+      {
+        href: "/documents/zayavlenie-pacient.docx",
+        label: "Заявление от пациента (DOCX)",
+        external: true,
+      },
+      {
+        href: "/documents/zayavlenie-drugoe-lico.docx",
+        label: "Заявление на другое лицо (DOCX)",
+        external: true,
+      },
+      {
+        href: "/documents/federalnyj-zakon-323-fz.docx",
+        label: "Федеральный закон № 323-ФЗ (DOCX)",
+        external: true,
+      },
+      {
+        href: "/documents/zakon-o-zashite-prav-potrebitelej.docx",
+        label: "Закон «О защите прав потребителей» (DOCX)",
+        external: true,
+      },
+      {
+        href: "/documents/postanovlenie-pgg-2023-2025.pdf",
+        label: "Постановление о Программе гос. гарантий 2023–2025 (PDF)",
+        external: true,
+      },
+      {
         href: "/price-19052026.xlsx",
         label: "Полный прайс-лист (Excel)",
         external: true,
@@ -100,6 +146,7 @@ const sections = [
   {
     title: "Дополнительно",
     links: [
+      { href: "/akcii", label: "Акции и скидки" },
       { href: "/vakansii", label: "Вакансии" },
       { href: "/otzyv", label: "Оставить отзыв" },
       { href: "/karta-sajta", label: "Карта сайта" },

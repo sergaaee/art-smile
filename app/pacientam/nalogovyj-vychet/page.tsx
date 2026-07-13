@@ -19,6 +19,32 @@ export default function TaxDeductionPage() {
         <li>копия лицензии клиники (при необходимости — предоставляется по запросу);</li>
         <li>копии платёжных документов (чеков, квитанций).</li>
       </ul>
+      <h2>Бланки заявлений</h2>
+      <ul>
+        <li>
+          <a
+            href="/documents/zayavlenie-pacient.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            Заявление от пациента
+          </a>{" "}
+          — если справка оформляется на самого пациента;
+        </li>
+        <li>
+          <a
+            href="/documents/zayavlenie-drugoe-lico.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            Заявление на другое лицо
+          </a>{" "}
+          — если справка оформляется для налогового вычета другого члена
+          семьи.
+        </li>
+      </ul>
       <h2>Как заказать справку</h2>
       <p>
         Для получения справки обратитесь к администратору клиники лично, по
