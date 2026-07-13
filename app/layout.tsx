@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import CookieConsent from "./_components/CookieConsent";
+import { SITE_URL } from "./_data/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,12 +11,31 @@ const inter = Inter({
   subsets: ["latin", "cyrillic"],
 });
 
+const title = "АРТ-СМАИЛ — стоматология в Новой Москве";
+const description =
+  "Стоматология «АРТ-СМАИЛ»: лечение, хирургия, имплантация Osstem, ортодонтия, протезирование и детская стоматология. Два филиала в Новой Москве";
+
 export const metadata: Metadata = {
-  title: "АРТ-СМАИЛ — стоматология в Новой Москве",
-  description:
-    "Стоматология «АРТ-СМАИЛ»: лечение, хирургия, имплантация Osstem, ортодонтия, протезирование и детская стоматология. Два филиала в Новой Москве, гарантия 5 лет.",
+  metadataBase: new URL(SITE_URL),
+  title,
+  description,
   icons: {
     icon: "/logo-artsmile.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    url: SITE_URL,
+    siteName: "АРТ-СМАИЛ",
+    title,
+    description,
+    images: [{ url: "/logo-artsmile.png", width: 210, height: 240, alt: "АРТ-СМАИЛ" }],
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: ["/logo-artsmile.png"],
   },
 };
 

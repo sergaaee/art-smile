@@ -5,6 +5,7 @@ import NoCopy from "./_components/NoCopy";
 import PartnersCarousel from "./_components/PartnersCarousel";
 import { locations } from "./_data/locations";
 import { legalInfo } from "./_data/legal";
+import { SITE_URL } from "./_data/site";
 import {
   BraceIcon,
   BrushIcon,
@@ -185,9 +186,59 @@ const documents = [
   },
 ];
 
+const jsonLd = locations.map((location) => ({
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": `${SITE_URL}/#${location.id}`,
+  name: `${legalInfo.shortName} — ${location.shortName}`,
+  image: `${SITE_URL}/logo-artsmile.png`,
+  url: SITE_URL,
+  telephone: "+7-926-530-50-03",
+  email: "nikitina.art-smail@yandex.ru",
+  priceRange: "₽₽",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: location.address,
+    addressLocality: "Москва",
+    addressCountry: "RU",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: location.lat,
+    longitude: location.lon,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "09:00",
+    closes: location.hours.includes("21:00") ? "21:00" : "19:00",
+  },
+  medicalSpecialty: "Dentistry",
+  parentOrganization: {
+    "@type": "MedicalOrganization",
+    name: legalInfo.fullName,
+    taxID: legalInfo.inn,
+  },
+}));
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
       {/* Hero / About */}
       <section id="o-nas" className="relative scroll-mt-20 overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28 lg:px-8">
