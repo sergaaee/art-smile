@@ -26,10 +26,13 @@ export default function PriceList() {
   );
 
   return (
-    <div className="divide-y divide-slate-200 rounded-2xl bg-white ring-1 ring-slate-200">
+    <div
+      className="select-none divide-y divide-slate-200 rounded-2xl bg-white ring-1 ring-slate-200"
+      onCopy={(event) => event.preventDefault()}
+      onContextMenu={(event) => event.preventDefault()}
+    >
       {priceCategories.map(({ category, items }) => {
         const isOpen = openCategory === category;
-        const minPrice = Math.min(...items.map((i) => i.price).filter((p) => p > 0));
 
         return (
           <div key={category}>
@@ -41,9 +44,6 @@ export default function PriceList() {
             >
               <span>
                 <span className="block text-base font-semibold text-slate-900">{category}</span>
-                <span className="mt-0.5 block text-sm text-slate-500">
-                  {items.length} {items.length === 1 ? "услуга" : "услуг"} · от {currency.format(minPrice)} ₽
-                </span>
               </span>
               <ChevronDownIcon
                 className={`h-5 w-5 shrink-0 text-slate-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
@@ -52,6 +52,10 @@ export default function PriceList() {
 
             {isOpen && (
               <div className="px-6 pb-6">
+                <div className="mb-2 flex items-center justify-between gap-4 px-4 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  <span>Название операции</span>
+                  <span>Цена</span>
+                </div>
                 {groupBySubcategory(items).map(([subcategory, subItems]) => (
                   <div key={subcategory || "_"} className="mb-4 last:mb-0">
                     {subcategory && (

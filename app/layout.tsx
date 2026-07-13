@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import CookieConsent from "./_components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({
@@ -29,6 +30,12 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <p className="bg-slate-900 px-4 py-4 text-center text-sm font-bold text-white">
+          Внимание! Возможны противопоказания. Необходима консультация
+          специалиста! Фотографии сотрудников/пациентов размещены с их
+          письменных согласий
+        </p>
+        <CookieConsent />
       </body>
     </html>
   );

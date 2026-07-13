@@ -9,8 +9,10 @@ const navLinks = [
   { href: "/#uslugi", label: "Услуги" },
   { href: "/#vrachi", label: "Врачи" },
   { href: "/#tseny", label: "Цены" },
-  { href: "/#o-klinike", label: "О клинике" },
+  { href: "/#o-nas", label: "О нас" },
+  { href: "/#dokumenty", label: "Документы" },
   { href: "/#kontakty", label: "Контакты" },
+  { href: "/karta-sajta", label: "Карта сайта" },
 ];
 
 export default function Header() {
