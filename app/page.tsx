@@ -42,7 +42,19 @@ const SOGLASIE_LINK = (
     </a>
 );
 
-const galleryPhotos = Array.from({length: 5}, (_, i) => `/gallery/img${i + 1}.jpg`);
+const galleryPhotos = [
+    "/gallery/img1.jpg",
+    "/gallery/img2.jpg",
+    "/gallery/img3.jpg",
+    "/gallery/img4.jpg",
+    "/gallery/img5.jpg",
+    "/gallery/img6.webp",
+    "/gallery/img7.webp",
+    "/gallery/img8.webp",
+    "/gallery/img9.webp",
+    "/gallery/img10.webp",
+    "/gallery/img11.webp",
+];
 
 const advantages = [
     {
