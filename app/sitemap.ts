@@ -20,7 +20,6 @@ const staticRoutes: Array<{
   { path: "/o-klinike/priem-rukovodstva", changeFrequency: "yearly", priority: 0.3 },
   { path: "/o-klinike/standarty", changeFrequency: "yearly", priority: 0.3 },
   { path: "/o-klinike/printsipy", changeFrequency: "yearly", priority: 0.4 },
-  { path: "/o-klinike/fotogalereya", changeFrequency: "monthly", priority: 0.4 },
   { path: "/pacientam/prava-i-obyazannosti", changeFrequency: "yearly", priority: 0.3 },
   { path: "/pacientam/pravila-vnutrennego-rasporyadka", changeFrequency: "yearly", priority: 0.3 },
   { path: "/pacientam/garantii", changeFrequency: "yearly", priority: 0.5 },

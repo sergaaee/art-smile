@@ -52,8 +52,8 @@ export default function PriceList() {
 
             {isOpen && (
               <div className="px-6 pb-6">
-                <div className="mb-2 flex items-center justify-between gap-4 px-4 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  <span>Название операции</span>
+                <div className="mb-2 flex items-center justify-between gap-4 px-4 text-xs uppercase tracking-wide text-slate-500">
+                  <span>Наименование услуги</span>
                   <span>Цена</span>
                 </div>
                 {groupBySubcategory(items).map(([subcategory, subItems]) => (
@@ -63,11 +63,11 @@ export default function PriceList() {
                         {subcategory}
                       </h4>
                     )}
-                    <ul className="divide-y divide-slate-100 overflow-hidden rounded-xl bg-slate-50">
+                    <ul className="divide-y divide-slate-300 overflow-hidden rounded-xl bg-slate-200">
                       {subItems.map((item, index) => (
                         <li
                           key={`${item.name}-${item.price}-${index}`}
-                          className="flex items-start justify-between gap-4 px-4 py-3 text-sm"
+                          className="flex items-start font-semibold justify-between gap-4 px-4 py-3 text-sm"
                         >
                           <span className="text-slate-700">{item.name}</span>
                           <span className="shrink-0 whitespace-nowrap font-semibold text-slate-900">

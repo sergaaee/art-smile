@@ -29,7 +29,7 @@ const sections = [
       { href: "/o-klinike/priem-rukovodstva", label: "Приём граждан руководством" },
       { href: "/o-klinike/standarty", label: "Стандарты, протоколы и клинические рекомендации" },
       { href: "/o-klinike/printsipy", label: "Наши принципы" },
-      { href: "/o-klinike/fotogalereya", label: "Фотогалерея" },
+      { href: "/#o-nas", label: "Фотогалерея" },
     ],
   },
   {
@@ -42,7 +42,6 @@ const sections = [
       { href: "/pacientam/pravila-povedeniya", label: "Правила поведения пациентов" },
       { href: "/politika-konfidentsialnosti", label: "Политика конфиденциальности" },
       { href: "/obrabotka-personalnyh-dannyh", label: "Политика обработки персональных данных" },
-      { href: "/pacientam/programma-gosgarantij", label: "Программа государственных гарантий" },
       { href: "/pacientam/nalogovyj-vychet", label: "Справка для налогового вычета" },
     ],
   },
@@ -72,18 +71,20 @@ const sections = [
     title: "Нормативная документация",
     links: [
       { href: "/dokumentaciya/federalnye-akty", label: "Федеральные нормативные акты" },
-      { href: "/dokumentaciya/vnutrennie-dokumenty", label: "Внутренние документы" },
       { href: "/dokumentaciya/vyshestoyashie-organizacii", label: "Вышестоящие организации" },
-      { href: "/dokumentaciya/territorialnaya-programma", label: "Территориальная программа" },
-      { href: "/dokumentaciya/usloviya-okazaniya-uslug", label: "Условия оказания услуг" },
     ],
   },
   {
     title: "Документы для скачивания",
     links: [
       {
-        href: "/documents/soglasie-na-obrabotku-personalnyh-dannyh.pdf",
-        label: "Согласие на обработку персональных данных (PDF)",
+        href: "/documents/soglasie-na-obrabotku-personalnyh-dannyh.docs",
+        label: "Согласие на обработку персональных данных (DOCX)",
+        external: true,
+      },
+      {
+        href: "/documents/659.pdf",
+        label: "Постановление Правительства РФ о правилах предоставления медицинскими организациями платных медицинских услуг (PDF)",
         external: true,
       },
       {
@@ -102,26 +103,6 @@ const sections = [
         external: true,
       },
       {
-        href: "/documents/programma-gosgarantij-2023-2025.pdf",
-        label: "Программа государственных гарантий 2023–2025 (PDF)",
-        external: true,
-      },
-      {
-        href: "/documents/territorialnaya-programma-2023-2025.pdf",
-        label: "Территориальная программа 2023–2025 (PDF)",
-        external: true,
-      },
-      {
-        href: "/documents/zayavlenie-pacient.docx",
-        label: "Заявление от пациента (DOCX)",
-        external: true,
-      },
-      {
-        href: "/documents/zayavlenie-drugoe-lico.docx",
-        label: "Заявление на другое лицо (DOCX)",
-        external: true,
-      },
-      {
         href: "/documents/federalnyj-zakon-323-fz.docx",
         label: "Федеральный закон № 323-ФЗ (DOCX)",
         external: true,
@@ -129,16 +110,6 @@ const sections = [
       {
         href: "/documents/zakon-o-zashite-prav-potrebitelej.docx",
         label: "Закон «О защите прав потребителей» (DOCX)",
-        external: true,
-      },
-      {
-        href: "/documents/postanovlenie-pgg-2023-2025.pdf",
-        label: "Постановление о Программе гос. гарантий 2023–2025 (PDF)",
-        external: true,
-      },
-      {
-        href: "/price-19052026.xlsx",
-        label: "Полный прайс-лист (Excel)",
         external: true,
       },
     ],

@@ -10,7 +10,6 @@ const quickLinks = [
   { href: "/#tseny", label: "Цены" },
   { href: "/#o-nas", label: "О нас" },
   { href: "/#dokumenty", label: "Документы" },
-  { href: "/#kontakty", label: "Контакты" },
 ];
 
 export default function Footer() {
@@ -31,7 +30,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-sm leading-6 text-slate-600">
-              Стоматологическая клиника «АРТ-СМАИЛ» в Новой Москве. Лечение,
+              Стоматологическая клиника «АРТ-СМАИЛ» в Новой Москве. Терапия,
               хирургия, имплантация, ортодонтия и детская стоматология в двух
               филиалах.
             </p>

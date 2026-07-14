@@ -13,7 +13,7 @@ const inter = Inter({
 
 const title = "АРТ-СМАИЛ — стоматология в Новой Москве";
 const description =
-  "Стоматология «АРТ-СМАИЛ»: лечение, хирургия, имплантация Osstem, ортодонтия, протезирование и детская стоматология. Два филиала в Новой Москве";
+  "Стоматология «АРТ-СМАИЛ»: терапия, хирургия, имплантация Osstem, ортодонтия, протезирование и детская стоматология. Два филиала в Новой Москве";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -50,11 +50,10 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <p className="bg-slate-900 px-4 py-4 text-center text-sm font-bold text-white">
-          Внимание! Возможны противопоказания. Необходима консультация
-          специалиста! Фотографии сотрудников/пациентов размещены с их
-          письменных согласий
-        </p>
+        <div className="flex flex-col items-center justify-center gap-x-10 gap-y-1 bg-slate-900 px-4 py-4 text-center text-sm font-bold text-white sm:flex-row">
+          <p>Внимание! Возможны противопоказания. Необходима консультация специалиста!</p>
+          <p>Фотографии сотрудников/пациентов размещены с их письменных согласий.</p>
+        </div>
         <CookieConsent />
       </body>
     </html>

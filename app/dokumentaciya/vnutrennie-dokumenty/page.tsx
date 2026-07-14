@@ -14,7 +14,7 @@ const documents = [
   { href: "/pacientam/prava-i-obyazannosti", label: "Права и обязанности пациента" },
   { href: "/pacientam/pravila-vnutrennego-rasporyadka", label: "Правила внутреннего распорядка" },
   { href: "/pacientam/garantii", label: "Гарантии на оказываемые услуги" },
-  { href: "/#dokumenty", label: "Документы для подписания пациентом" },
+  { href: "/#dokumenty", label: "Документы" },
 ];
 
 export default function InternalDocumentsPage() {
