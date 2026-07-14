@@ -12,9 +12,26 @@ export async function POST(request: Request) {
   const name = typeof body.name === "string" ? body.name.trim() : "";
   const contact = typeof body.contact === "string" ? body.contact.trim() : "";
   const text = typeof body.text === "string" ? body.text.trim() : "";
+  const consent = body.consent === true;
+  const captchaA = Number(body.captchaA);
+  const captchaB = Number(body.captchaB);
+  const captchaAnswer = Number(body.captchaAnswer);
 
   if (!name || !text) {
     return Response.json({ error: "Заполните имя и текст отзыва" }, { status: 400 });
+  }
+
+  if (!consent) {
+    return Response.json({ error: "Необходимо согласие на обработку персональных данных" }, { status: 400 });
+  }
+
+  if (
+    !Number.isFinite(captchaA) ||
+    !Number.isFinite(captchaB) ||
+    !Number.isFinite(captchaAnswer) ||
+    captchaAnswer !== captchaA + captchaB
+  ) {
+    return Response.json({ error: "Неверный ответ на проверочный вопрос" }, { status: 400 });
   }
 
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;

@@ -42,6 +42,7 @@ const staticRoutes: Array<{
   { path: "/dokumentaciya/vyshestoyashie-organizacii", changeFrequency: "yearly", priority: 0.2 },
   { path: "/dokumentaciya/territorialnaya-programma", changeFrequency: "yearly", priority: 0.2 },
   { path: "/dokumentaciya/usloviya-okazaniya-uslug", changeFrequency: "yearly", priority: 0.2 },
+  { path: "/dokumentaciya/dogovor", changeFrequency: "yearly", priority: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

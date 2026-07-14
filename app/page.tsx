@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PriceList from "./_components/PriceList";
 import LocationMap from "./_components/LocationMap";
 import NoCopy from "./_components/NoCopy";
@@ -25,14 +26,9 @@ import {
 } from "./_components/icons";
 
 const DOGOVOR_LINK = (
-    <a
-        href="/documents/dogovor.docx"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-700 hover:underline"
-    >
+    <Link href="/dokumentaciya/dogovor" className="text-blue-700 hover:underline">
         Договора
-    </a>
+    </Link>
 );
 
 const SOGLASIE_LINK = (

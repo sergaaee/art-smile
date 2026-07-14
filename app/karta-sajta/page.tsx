@@ -72,6 +72,7 @@ const sections = [
     links: [
       { href: "/dokumentaciya/federalnye-akty", label: "Федеральные нормативные акты" },
       { href: "/dokumentaciya/vyshestoyashie-organizacii", label: "Вышестоящие организации" },
+      { href: "/dokumentaciya/dogovor", label: "Договор оказания платных медицинских услуг" },
     ],
   },
   {
@@ -85,11 +86,6 @@ const sections = [
       {
         href: "/documents/659.pdf",
         label: "Постановление Правительства РФ о правилах предоставления медицинскими организациями платных медицинских услуг (PDF)",
-        external: true,
-      },
-      {
-        href: "/documents/dogovor.docx",
-        label: "Договор оказания медицинских услуг (DOCX)",
         external: true,
       },
       {

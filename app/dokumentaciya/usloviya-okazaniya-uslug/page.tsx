@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import InfoPage from "../../_components/InfoPage";
 
 export const metadata: Metadata = {
@@ -7,14 +8,9 @@ export const metadata: Metadata = {
 };
 
 const DOGOVOR_LINK = (
-  <a
-    href="/documents/dogovor.docx"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-700 hover:underline"
-  >
+  <Link href="/dokumentaciya/dogovor" className="text-blue-700 hover:underline">
     Договора
-  </a>
+  </Link>
 );
 
 const SOGLASIE_LINK = (
