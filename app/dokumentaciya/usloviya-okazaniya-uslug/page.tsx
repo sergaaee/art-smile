@@ -19,7 +19,7 @@ const DOGOVOR_LINK = (
 
 const SOGLASIE_LINK = (
   <a
-    href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.pdf"
+    href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.docx"
     target="_blank"
     rel="noopener noreferrer"
     className="text-blue-700 hover:underline"

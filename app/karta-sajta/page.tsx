@@ -78,7 +78,7 @@ const sections = [
     title: "Документы для скачивания",
     links: [
       {
-        href: "/documents/soglasie-na-obrabotku-personalnyh-dannyh.docs",
+        href: "/documents/soglasie-na-obrabotku-personalnyh-dannyh.docx",
         label: "Согласие на обработку персональных данных (DOCX)",
         external: true,
       },

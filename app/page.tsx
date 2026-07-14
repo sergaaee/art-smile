@@ -37,7 +37,7 @@ const DOGOVOR_LINK = (
 
 const SOGLASIE_LINK = (
     <a
-        href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.pdf"
+        href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.docx"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-700 hover:underline"
@@ -46,7 +46,7 @@ const SOGLASIE_LINK = (
     </a>
 );
 
-const galleryPhotos = Array.from({length: 6}, (_, i) => `/gallery/img${i + 1}.jpg`);
+const galleryPhotos = Array.from({length: 5}, (_, i) => `/gallery/img${i + 1}.jpg`);
 
 const advantages = [
     {
@@ -255,8 +255,12 @@ export default function Home() {
                                 цены.
                             </p>
                             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-                                Принимаем в двух филиалах: п. Птичное и Новые Ватутинки.
+                                Принимаем в двух филиалах:
                             </p>
+                            <ul className="mt-2 max-w-xl list-disc space-y-1 pl-5 text-lg leading-8 text-slate-600">
+                                <li>п. Птичное</li>
+                                <li>Новые Ватутинки</li>
+                            </ul>
                         </div>
 
                         <PhotoCarousel photos={galleryPhotos} />
