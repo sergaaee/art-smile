@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PriceList from "./_components/PriceList";
 import LocationMap from "./_components/LocationMap";
 import NoCopy from "./_components/NoCopy";
@@ -33,6 +32,17 @@ const DOGOVOR_LINK = (
         className="text-blue-700 hover:underline"
     >
         Договора
+    </a>
+);
+
+const SOGLASIE_LINK = (
+    <a
+        href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-700 hover:underline"
+    >
+        согласия на обработку персональных данных
     </a>
 );
 
@@ -231,7 +241,7 @@ export default function Home() {
             <section id="o-nas"
                      className="relative scroll-mt-20 overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white">
                 <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28 lg:px-8">
-                    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
                         <div>
               <span
                   className="inline-flex items-center rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-800">
@@ -253,24 +263,24 @@ export default function Home() {
                     </div>
 
                     <div className="mt-16 grid gap-8 border-t border-slate-200 pt-12 lg:grid-cols-2">
-                        <p className="text-base leading-7 text-slate-600">
-                            {legalInfo.shortName} работает в Новой Москве с {legalInfo.registrationDate.slice(-4)} года.
-                            Клинику возглавляет {legalInfo.generalDirector} — врач-стоматолог с опытом работы более 30
-                            лет. Мы принимаем пациентов
-                            в двух филиалах и специализируемся на: терапии, хирургии,
-                            имплантации, ортодонтии, эстетической и детской стоматологии.
-                        </p>
                         <div>
                             <p className="text-base leading-7 text-slate-600">
-                                В работе используем импланты Osstem (Южная Корея) — срок
-                                приживления от 2,5 месяцев — и строго соблюдаем протоколы
-                                дезинфекции и стерилизации.
+                                {legalInfo.shortName} работает в Новой Москве с {legalInfo.registrationDate.slice(-4)} года.
+                                Клинику возглавляет {legalInfo.generalDirector} — врач-стоматолог с опытом работы более 30
+                                лет. Мы принимаем пациентов
+                                в двух филиалах и специализируемся на: терапии, хирургии,
+                                имплантации, ортодонтии, эстетической и детской стоматологии.
                             </p>
                             <div
                                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-medium text-slate-500 ring-1 ring-slate-200">
                                 Лицензия № {legalInfo.licenseNumber} от {legalInfo.licenseDate}
                             </div>
                         </div>
+                        <p className="text-base leading-7 text-slate-600">
+                            В работе используем импланты Osstem (Южная Корея) — срок
+                            приживления от 2,5 месяцев — и строго соблюдаем протоколы
+                            дезинфекции и стерилизации.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -412,13 +422,6 @@ export default function Home() {
                             <p className="text-sm text-slate-500">
                                 Нажмите на категорию, чтобы посмотреть полный список услуг и цен.
                             </p>
-                            <a
-                                href="/price-19052026.xlsx"
-                                download
-                                className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-blue-700 hover:underline"
-                            >
-                                Скачать полный прайс-лист (Excel)
-                            </a>
                         </div>
                         <div className="mt-4">
                             <PriceList/>
@@ -432,7 +435,7 @@ export default function Home() {
                 <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                     <div className="max-w-2xl">
                         <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                            Условия использования
+                            Условия оказания платных медицинских услуг
                         </h2>
                         <p className="mt-4 text-lg text-slate-600">
                             Условия оказания платных медицинских услуг в стоматологии «АРТ-СМАИЛ».
@@ -455,24 +458,17 @@ export default function Home() {
                                 вмешательство.
                             </li>
                             <li>
-                                Предоставление медицинских услуг без подписанного Потребителем{" "}
-                                {DOGOVOR_LINK} и ИДС на медицинское вмешательство{" "}
+                                Предоставление медицинских услуг без подписанного Потребителем Договора и ИДС на медицинское вмешательство{" "}
                                 <b>не допускается</b>.
                             </li>
                             <li>
                                 Обработка персональных данных Потребителя осуществляется на
                                 основании отдельного согласия, <b>для целей</b> исполнения
-                                Исполнителем обязательств по договору.
+                                Исполнителем обязательств по Договору. Обработка персональных
+                                данных должна быть подтверждена подписанием {SOGLASIE_LINK}.
                             </li>
                         </ol>
 
-                        <Link
-                            href="/dokumentaciya/usloviya-okazaniya-uslug"
-                            className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:underline"
-                        >
-                            Подробнее
-                            <span aria-hidden="true">→</span>
-                        </Link>
                     </div>
                 </div>
             </section>

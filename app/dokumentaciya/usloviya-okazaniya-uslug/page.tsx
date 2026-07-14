@@ -17,6 +17,17 @@ const DOGOVOR_LINK = (
   </a>
 );
 
+const SOGLASIE_LINK = (
+  <a
+    href="/documents/soglasie-na-obrabotku-personalnyh-dannyh.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-700 hover:underline"
+  >
+    согласия на обработку персональных данных
+  </a>
+);
+
 export default function ServiceTermsPage() {
   return (
     <InfoPage title="Условия оказания услуг">
@@ -40,7 +51,8 @@ export default function ServiceTermsPage() {
         <li>
           Обработка персональных данных Потребителя осуществляется на
           основании отдельного согласия, <b>для целей</b> исполнения Исполнителем
-          обязательств по договору.
+          обязательств по договору. Обработка персональных данных должна быть
+          подтверждена подписанием {SOGLASIE_LINK}.
         </li>
       </ol>
     </InfoPage>

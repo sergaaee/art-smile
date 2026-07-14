@@ -29,19 +29,18 @@ export default function PhotoCarousel({ photos }: { photos: string[] }) {
         />
       ))}
 
-      <div className="absolute inset-x-0 bottom-4 flex justify-center gap-2">
-        {photos.map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => setIndex(i)}
-            aria-label={`Показать фото ${i + 1}`}
-            className={`h-2 w-2 rounded-full transition-colors ${
-              i === index ? "bg-white" : "bg-white/50"
-            }`}
-          />
-        ))}
-      </div>
+      <button
+        type="button"
+        onClick={() => setIndex((current) => (current - 1 + photos.length) % photos.length)}
+        aria-label="Предыдущее фото"
+        className="absolute left-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-r-[32px] border-y-transparent border-r-black transition-opacity hover:opacity-70"
+      />
+      <button
+        type="button"
+        onClick={() => setIndex((current) => (current + 1) % photos.length)}
+        aria-label="Следующее фото"
+        className="absolute right-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-l-[32px] border-y-transparent border-l-black transition-opacity hover:opacity-70"
+      />
     </div>
   );
 }
