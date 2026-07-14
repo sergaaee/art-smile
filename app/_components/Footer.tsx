@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon } from "./icons";
@@ -11,6 +13,21 @@ const quickLinks = [
   { href: "/#o-nas", label: "О нас" },
   { href: "/#dokumenty", label: "Документы" },
 ];
+
+function handleSectionLinkClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  const hashIndex = href.indexOf("#");
+  if (hashIndex === -1) return;
+
+  const id = href.slice(hashIndex + 1);
+  if (window.location.pathname !== "/") return;
+
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  event.preventDefault();
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${id}`);
+}
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -41,7 +58,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-slate-600 hover:text-blue-700">
+                  <Link
+                    href={link.href}
+                    onClick={(event) => handleSectionLinkClick(event, link.href)}
+                    className="text-sm text-slate-600 hover:text-blue-700"
+                  >
                     {link.label}
                   </Link>
                 </li>

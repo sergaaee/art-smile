@@ -33,13 +33,13 @@ export default function PhotoCarousel({ photos }: { photos: string[] }) {
         type="button"
         onClick={() => setIndex((current) => (current - 1 + photos.length) % photos.length)}
         aria-label="Предыдущее фото"
-        className="absolute left-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-r-[32px] border-y-transparent border-r-black transition-opacity hover:opacity-70"
+        className="absolute left-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-r-[32px] border-y-transparent border-r-white transition-opacity hover:opacity-70"
       />
       <button
         type="button"
         onClick={() => setIndex((current) => (current + 1) % photos.length)}
         aria-label="Следующее фото"
-        className="absolute right-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-l-[32px] border-y-transparent border-l-black transition-opacity hover:opacity-70"
+        className="absolute right-4 top-1/2 h-0 w-0 -translate-y-1/2 border-y-[20px] border-l-[32px] border-y-transparent border-l-white transition-opacity hover:opacity-70"
       />
     </div>
   );

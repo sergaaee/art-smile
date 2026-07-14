@@ -15,6 +15,21 @@ const navLinks = [
   { href: "/karta-sajta", label: "Карта сайта" },
 ];
 
+function handleSectionLinkClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  const hashIndex = href.indexOf("#");
+  if (hashIndex === -1) return;
+
+  const id = href.slice(hashIndex + 1);
+  if (window.location.pathname !== "/") return;
+
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  event.preventDefault();
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${id}`);
+}
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -37,6 +52,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={(event) => handleSectionLinkClick(event, link.href)}
               className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-700"
             >
               {link.label}
@@ -54,6 +70,7 @@ export default function Header() {
           </a>
           <Link
             href="/#kontakty"
+            onClick={(event) => handleSectionLinkClick(event, "/#kontakty")}
             className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-600/20 transition-colors hover:bg-blue-700"
           >
             Записаться на приём
@@ -78,7 +95,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(event) => {
+                  handleSectionLinkClick(event, link.href);
+                  setIsMenuOpen(false);
+                }}
                 className="rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-blue-700"
               >
                 {link.label}
@@ -95,7 +115,10 @@ export default function Header() {
             </a>
             <Link
               href="/#kontakty"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(event) => {
+                handleSectionLinkClick(event, "/#kontakty");
+                setIsMenuOpen(false);
+              }}
               className="rounded-full bg-blue-600 px-5 py-2.5 text-center text-sm font-semibold text-white hover:bg-blue-700"
             >
               Записаться на приём
