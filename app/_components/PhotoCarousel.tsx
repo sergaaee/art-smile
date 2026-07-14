@@ -23,7 +23,7 @@ export default function PhotoCarousel({ photos }: { photos: string[] }) {
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
           priority={i === 0}
-          className={`object-cover transition-opacity duration-700 ${
+          className={`object-contain transition-opacity duration-700 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
         />

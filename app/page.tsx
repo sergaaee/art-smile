@@ -43,6 +43,7 @@ const SOGLASIE_LINK = (
 );
 
 const galleryPhotos = [
+    "/gallery/img1.webp",
     "/gallery/img1.jpg",
     "/gallery/img2.jpg",
     "/gallery/img3.jpg",
