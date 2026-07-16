@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import CookieConsent from "./_components/CookieConsent";
@@ -55,6 +56,12 @@ export default function RootLayout({
           <p>Фотографии сотрудников/пациентов размещены с их письменных согласий.</p>
         </div>
         <CookieConsent />
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="258e6420-f8b1-40b9-a71e-775627852649"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
