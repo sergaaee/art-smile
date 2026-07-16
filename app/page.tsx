@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import PriceList from "./_components/PriceList";
 import LocationMap from "./_components/LocationMap";
@@ -245,6 +246,12 @@ const jsonLd = locations.map((location) => ({
         taxID: legalInfo.inn,
     },
 }));
+
+export const metadata: Metadata = {
+    verification: {
+        yandex: "136d457ee44fd3ec",
+    },
+};
 
 export default function Home() {
     return (
