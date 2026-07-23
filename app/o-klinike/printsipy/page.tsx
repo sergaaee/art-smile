@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Наши принципы — АРТ-СМАИЛ",
   description: "Принципы работы стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/o-klinike/printsipy" },
 };
 
 export default function PrinciplesPage() {

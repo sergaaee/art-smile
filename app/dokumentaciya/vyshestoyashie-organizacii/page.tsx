@@ -5,6 +5,7 @@ import { partners } from "../../_data/partners";
 export const metadata: Metadata = {
   title: "Вышестоящие организации — АРТ-СМАИЛ",
   description: "Контролирующие и вышестоящие организации в сфере здравоохранения.",
+  alternates: { canonical: "/dokumentaciya/vyshestoyashie-organizacii" },
 };
 
 export default function SupervisoryBodiesPage() {

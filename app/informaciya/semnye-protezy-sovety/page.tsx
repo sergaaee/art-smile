@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Советы пользующимся съёмными протезами — АРТ-СМАИЛ",
   description: "Как быстрее привыкнуть к съёмному зубному протезу.",
+  alternates: { canonical: "/informaciya/semnye-protezy-sovety" },
 };
 
 export default function RemovableDenturesTipsPage() {

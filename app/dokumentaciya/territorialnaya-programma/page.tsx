@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Территориальная программа — АРТ-СМАИЛ",
   description: "Территориальная программа государственных гарантий в городе Москве.",
+  alternates: { canonical: "/dokumentaciya/territorialnaya-programma" },
 };
 
 export default function TerritorialProgramPage() {

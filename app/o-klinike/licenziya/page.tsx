@@ -6,6 +6,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Лицензия — АРТ-СМАИЛ",
   description: "Информация о лицензии на медицинскую деятельность стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/o-klinike/licenziya" },
 };
 
 export default function LicensePage() {

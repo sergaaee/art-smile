@@ -5,6 +5,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Внутренние документы — АРТ-СМАИЛ",
   description: "Внутренние документы клиники «АРТ-СМАИЛ», размещённые в открытом доступе.",
+  alternates: { canonical: "/dokumentaciya/vnutrennie-dokumenty" },
 };
 
 const documents = [

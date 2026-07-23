@@ -5,6 +5,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Правила внутреннего распорядка — АРТ-СМАИЛ",
   description: "Правила внутреннего распорядка для потребителей услуг в ООО «АРТ-СМАИЛ».",
+  alternates: { canonical: "/pacientam/pravila-vnutrennego-rasporyadka" },
 };
 
 export default function InternalRulesPage() {

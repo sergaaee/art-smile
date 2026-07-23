@@ -17,6 +17,14 @@ const legacyHomeSections = [
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // www — зеркало, дублирующее контент без редиректа на основной домен.
+      // Склеиваем на non-www, чтобы не плодить дубли для Яндекса/Google.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.art-smile-nikitina.ru" }],
+        destination: "https://art-smile-nikitina.ru/:path*",
+        permanent: true,
+      },
       ...legacyHomeSections.map((id) => ({
         source: `/${id}.html`,
         destination: `/#${id}`,
@@ -28,6 +36,21 @@ const nextConfig: NextConfig = {
         source: "/:path*.html",
         destination: "/:path*",
         permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      // Файлы из /public не хешируются со сборкой, поэтому без явного
+      // Cache-Control браузер их не кеширует вовсе (max-age=0 по умолчанию).
+      {
+        source: "/:path*.(jpg|jpeg|png|webp|avif|svg|pdf|docx|xlsx)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
+          },
+        ],
       },
     ];
   },

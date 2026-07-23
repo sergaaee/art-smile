@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Справка для налогового вычета — АРТ-СМАИЛ",
   description: "Как получить справку об оплате медицинских услуг для оформления налогового вычета.",
+  alternates: { canonical: "/pacientam/nalogovyj-vychet" },
 };
 
 export default function TaxDeductionPage() {

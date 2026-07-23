@@ -5,6 +5,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Правила поведения пациентов — АРТ-СМАИЛ",
   description: "Правила поведения в ООО «АРТ-СМАИЛ».",
+  alternates: { canonical: "/pacientam/pravila-povedeniya" },
 };
 
 export default function ConductRulesPage() {

@@ -6,6 +6,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "ИНН/ОГРН — АРТ-СМАИЛ",
   description: "Реквизиты юридического лица стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/o-klinike/inn-ogrn" },
 };
 
 export default function InnOgrnPage() {

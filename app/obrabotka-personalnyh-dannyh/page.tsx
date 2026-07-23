@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Политика обработки персональных данных — АРТ-СМАИЛ",
   description:
     "Политика обработки персональных данных пациентов в ООО «АРТ-СМАИЛ»: категории данных, цели, сроки хранения и права субъекта.",
+  alternates: { canonical: "/obrabotka-personalnyh-dannyh" },
 };
 
 export default function PersonalDataPolicyPage() {

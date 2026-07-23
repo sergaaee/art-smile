@@ -5,6 +5,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Стандарты, протоколы и клинические рекомендации — АРТ-СМАИЛ",
   description: "Клинические рекомендации и протоколы лечения, применяемые в стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/o-klinike/standarty" },
 };
 
 const protocols = [

@@ -21,6 +21,7 @@ export async function generateMetadata({
   return {
     title: `${service.title} — АРТ-СМАИЛ`,
     description: service.summary,
+    alternates: { canonical: `/uslugi/${service.slug}` },
   };
 }
 

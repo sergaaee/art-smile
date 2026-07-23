@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Виды оказываемой помощи — АРТ-СМАИЛ",
   description: "Перечень оказываемых платных стоматологических услуг клиники «АРТ-СМАИЛ».",
+  alternates: { canonical: "/o-klinike/vidy-pomoshi" },
 };
 
 export default function CareTypesPage() {

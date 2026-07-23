@@ -4,6 +4,7 @@ import InfoPage from "../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Вакансии — АРТ-СМАИЛ",
   description: "Вакансии стоматологии «АРТ-СМАИЛ»: ассистент стоматолога.",
+  alternates: { canonical: "/vakansii" },
 };
 
 const vacancies = [

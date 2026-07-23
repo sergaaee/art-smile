@@ -5,6 +5,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Условия оказания услуг — АРТ-СМАИЛ",
   description: "Условия оказания платных медицинских услуг в стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/dokumentaciya/usloviya-okazaniya-uslug" },
 };
 
 const DOGOVOR_LINK = (

@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Почему важно лечить молочные зубы — АРТ-СМАИЛ",
   description: "Почему при кариесе нужно вовремя лечить молочные зубы.",
+  alternates: { canonical: "/informaciya/lechenie-molochnyh-zubov" },
 };
 
 export default function MilkTeethTreatmentPage() {

@@ -5,6 +5,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Программа государственных гарантий — АРТ-СМАИЛ",
   description: "Информация о программе государственных гарантий бесплатного оказания медицинской помощи.",
+  alternates: { canonical: "/pacientam/programma-gosgarantij" },
 };
 
 export default function StateGuaranteesPage() {

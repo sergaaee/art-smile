@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Подготовка к диагностическим исследованиям — АРТ-СМАИЛ",
   description: "Как подготовиться к рентгенографии и другим диагностическим исследованиям перед приёмом.",
+  alternates: { canonical: "/pacientam/podgotovka-k-issledovaniyam" },
 };
 
 export default function DiagnosticsPrepPage() {

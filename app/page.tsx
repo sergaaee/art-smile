@@ -251,6 +251,7 @@ export const metadata: Metadata = {
     verification: {
         yandex: "136d457ee44fd3ec",
     },
+    alternates: { canonical: "/" },
 };
 
 export default function Home() {

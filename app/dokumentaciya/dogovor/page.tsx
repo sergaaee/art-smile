@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Договор оказания платных медицинских услуг — АРТ-СМАИЛ",
   description:
     "Типовой договор оказания платных медицинских услуг стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/dokumentaciya/dogovor" },
 };
 
 export default function DogovorPage() {

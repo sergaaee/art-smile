@@ -5,6 +5,7 @@ import ReviewForm from "../_components/ReviewForm";
 export const metadata: Metadata = {
   title: "Оставить отзыв — АРТ-СМАИЛ",
   description: "Оставьте отзыв о стоматологии «АРТ-СМАИЛ» — он придёт нам на почту.",
+  alternates: { canonical: "/otzyv" },
 };
 
 export default function ReviewPage() {

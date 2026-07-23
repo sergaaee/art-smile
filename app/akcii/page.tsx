@@ -5,6 +5,7 @@ import InfoPage from "../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Акции и скидки — АРТ-СМАИЛ",
   description: "Действующие акции и скидки стоматологии «АРТ-СМАИЛ».",
+  alternates: { canonical: "/akcii" },
 };
 
 export default function PromotionsPage() {

@@ -5,6 +5,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Памятка пациентам — АРТ-СМАИЛ",
   description: "Общая памятка пациентам стоматологии «АРТ-СМАИЛ» перед визитом.",
+  alternates: { canonical: "/informaciya/pamyatka-pacientam" },
 };
 
 export default function PatientMemoPage() {

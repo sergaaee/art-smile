@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Политика конфиденциальности — АРТ-СМАИЛ",
   description:
     "Политика конфиденциальности сайта стоматологии «АРТ-СМАИЛ»: какие данные собираются, для чего используются и как защищаются.",
+  alternates: { canonical: "/politika-konfidentsialnosti" },
 };
 
 export default function PrivacyPolicyPage() {

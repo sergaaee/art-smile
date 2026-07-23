@@ -5,6 +5,7 @@ import { serviceDetails } from "../_data/serviceDetails";
 export const metadata: Metadata = {
   title: "Карта сайта — АРТ-СМАИЛ",
   description: "Карта сайта стоматологии «АРТ-СМАИЛ»: все страницы и разделы.",
+  alternates: { canonical: "/karta-sajta" },
 };
 
 const sections = [

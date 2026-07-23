@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "После отбеливания зубов — АРТ-СМАИЛ",
   description: "Правила поведения пациента после отбеливания зубов.",
+  alternates: { canonical: "/informaciya/posle-otbelivaniya" },
 };
 
 export default function AfterWhiteningPage() {

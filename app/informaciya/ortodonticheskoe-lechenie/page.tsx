@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Памятка при ортодонтическом лечении — АРТ-СМАИЛ",
   description: "Рекомендации пациентам, проходящим лечение на брекет-системе.",
+  alternates: { canonical: "/informaciya/ortodonticheskoe-lechenie" },
 };
 
 export default function OrthodonticMemoPage() {

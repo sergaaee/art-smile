@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Памятка после удаления зуба — АРТ-СМАИЛ",
   description: "Как вести себя в первые дни после удаления зуба.",
+  alternates: { canonical: "/informaciya/posle-udaleniya-zuba" },
 };
 
 export default function AfterExtractionPage() {

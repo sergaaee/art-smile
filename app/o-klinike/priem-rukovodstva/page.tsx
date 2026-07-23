@@ -5,6 +5,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Приём граждан руководством — АРТ-СМАИЛ",
   description: "Как обратиться к руководству клиники «АРТ-СМАИЛ» по вопросам качества обслуживания.",
+  alternates: { canonical: "/o-klinike/priem-rukovodstva" },
 };
 
 export default function ManagementReceptionPage() {

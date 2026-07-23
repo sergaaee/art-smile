@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Права и обязанности пациента — АРТ-СМАИЛ",
   description: "Права и обязанности пациента при обращении в стоматологию «АРТ-СМАИЛ».",
+  alternates: { canonical: "/pacientam/prava-i-obyazannosti" },
 };
 
 export default function PatientRightsPage() {

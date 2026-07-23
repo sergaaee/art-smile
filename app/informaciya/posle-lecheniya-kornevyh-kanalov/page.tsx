@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "После лечения корневых каналов — АРТ-СМАИЛ",
   description: "Правила поведения пациента после лечения корневых каналов.",
+  alternates: { canonical: "/informaciya/posle-lecheniya-kornevyh-kanalov" },
 };
 
 export default function AfterRootCanalPage() {

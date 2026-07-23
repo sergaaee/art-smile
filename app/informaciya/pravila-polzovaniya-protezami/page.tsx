@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "Правила пользования съёмными протезами — АРТ-СМАИЛ",
   description: "Ежедневный уход за съёмным зубным протезом.",
+  alternates: { canonical: "/informaciya/pravila-polzovaniya-protezami" },
 };
 
 export default function DenturesCarePage() {

@@ -5,6 +5,7 @@ import { legalInfo } from "../../_data/legal";
 export const metadata: Metadata = {
   title: "Гарантии на оказываемые услуги — АРТ-СМАИЛ",
   description: "Гарантийные обязательства стоматологии «АРТ-СМАИЛ» на выполненные работы (п. 5 Договора об оказании платных медицинских услуг).",
+  alternates: { canonical: "/pacientam/garantii" },
 };
 
 const warrantyTable = [

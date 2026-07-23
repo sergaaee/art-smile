@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "После реставрации зубов — АРТ-СМАИЛ",
   description: "Правила поведения пациента после эстетической реставрации зубов.",
+  alternates: { canonical: "/informaciya/posle-restavracii" },
 };
 
 export default function AfterRestorationPage() {

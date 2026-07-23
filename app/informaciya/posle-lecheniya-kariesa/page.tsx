@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
   title: "После лечения кариеса — АРТ-СМАИЛ",
   description: "Правила поведения пациента после лечения кариеса и установки пломбы.",
+  alternates: { canonical: "/informaciya/posle-lecheniya-kariesa" },
 };
 
 export default function AfterCariesTreatmentPage() {

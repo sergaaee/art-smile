@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description,
+  alternates: { canonical: "/" },
   icons: {
     icon: "/logo-artsmile.png",
   },

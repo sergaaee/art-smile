@@ -4,6 +4,7 @@ import InfoPage from "../../_components/InfoPage";
 export const metadata: Metadata = {
     title: "Федеральные нормативные акты — АРТ-СМАИЛ",
     description: "Федеральные нормативные акты, регулирующие оказание медицинской помощи.",
+    alternates: { canonical: "/dokumentaciya/federalnye-akty" },
 };
 
 const acts = [
