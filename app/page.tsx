@@ -56,6 +56,7 @@ const galleryPhotos = [
     "/gallery/img9.webp",
     "/gallery/img10.webp",
     "/gallery/img11.webp",
+    "/gallery/img12.jpg",
 ];
 
 const advantages = [
